@@ -7,7 +7,7 @@ class AlumnoForm(forms.ModelForm):
         fields = '__all__'
 
         widgets = {
-             "copiaDNI_A":forms.ChoiceField(choices=[('si', 'Si'), ('no', 'No')], widget=forms.RadioSelect),
+             "copiaDNI_A":forms.ChoiceField(choices=[('entregado', 'Entregado'), ('no_entregado', 'No entregado')], widget=forms.RadioSelect),
             'fechanacimientoA': forms.DateInput(attrs={'type': 'date'})
             
         }

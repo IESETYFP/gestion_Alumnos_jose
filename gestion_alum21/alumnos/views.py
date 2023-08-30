@@ -10,4 +10,5 @@ def alumno_nuevo(request):
     else:
         form = AlumnoForm()
     return render(request, 'alumnos/alumno_form.html', {'form': form})
-
+def alumno_lista(request):
+    return 0
